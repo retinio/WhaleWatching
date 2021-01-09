@@ -1,12 +1,19 @@
+branches:
+  only:
+    - main
+
 language: csharp
-sudo: required                                                                                        
 mono: none
 dotnet: 5.0.101
+
 solution: ./src/WhaleCD.sln
+
 before_script:
   - dotnet restore ./src/WhaleCD.sln
+
 script:
   - dotnet build ./src/WhaleCD.sln --configuration Release
   - dotnet test -c Release --no-build ./tests/UnitTests/WhaleCD.UnitTests/WhaleCD.UnitTests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover --collect:"XPlat Code Coverage"
+
 after_success:
-        - bash <(curl -s https://codecov.io/bash)
+  - bash <(curl -s https://codecov.io/bash)

@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhaleCD.Api", "WhaleCD.Api\WhaleCD.Api.csproj", "{677814C3-9416-4A0F-BCF4-C2F664A20197}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhaleWatching.Api", "WhaleWatching.Api\WhaleWatching.Api.csproj", "{677814C3-9416-4A0F-BCF4-C2F664A20197}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D9704997-3F31-4EAE-83FC-626607A316DF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{AF1877F2-7E17-4DC8-8211-428AD77B0C84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhaleCD.UnitTests", "..\tests\UnitTests\WhaleCD.UnitTests\WhaleCD.UnitTests.csproj", "{3FE73B41-ACA4-41E2-830A-EE33509964AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhaleWatching.UnitTests", "..\tests\UnitTests\WhaleWatching.UnitTests\WhaleWatching.UnitTests.csproj", "{3FE73B41-ACA4-41E2-830A-EE33509964AA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

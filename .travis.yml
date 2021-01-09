@@ -6,14 +6,14 @@ language: csharp
 mono: none
 dotnet: 5.0.101
 
-solution: ./src/WhaleCD.sln
+solution: ./src/WhaleWatching.sln
 
 before_script:
-  - dotnet restore ./src/WhaleCD.sln
+  - dotnet restore ./src/WhaleWatching.sln
 
 script:
-  - dotnet build ./src/WhaleCD.sln --configuration Release
-  - dotnet test -c Release --no-build ./tests/UnitTests/WhaleCD.UnitTests/WhaleCD.UnitTests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover --collect:"XPlat Code Coverage"
+  - dotnet build ./src/WhaleWatching.sln --configuration Release
+  - dotnet test -c Release --no-build ./tests/UnitTests/WhaleWatching.UnitTests/WhaleWatching.UnitTests.csproj /p:CollectCoverage=true /p:CoverletOutputFormat=opencover --collect:"XPlat Code Coverage"
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
